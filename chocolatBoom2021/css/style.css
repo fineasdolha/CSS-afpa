@@ -1,0 +1,184 @@
+h1, h2, h3 {
+    font-family: 'PT Sans Narrow';
+    font-size: 1.4em;
+    background-color: rgb(92, 53, 37);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    color: white;
+    font-family:'PT Sans Narrow';
+}
+
+body {
+    background-color: rgb(30, 97, 102) ;
+    width: 50em;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header img {
+    height: 15em;
+    max-width: 20em;
+    min-width: 0.1em;
+    margin-bottom: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;
+    padding:0.5em 1em 0.5em 1em;
+    
+    transition: background-color 0.6s ease;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(92, 53, 37);
+    display: flex;
+    justify-content: space-between;
+}
+
+section img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    
+}
+
+section {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+}
+
+aside p {
+    color: black;
+}
+
+main #enonce {
+  font-size: 0.5em;
+  background-color:  rgb(92, 53, 37);
+  padding: 0.5em;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;  
+}
+
+ main #enonce:hover {
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+@media  screen and (max-width:960px)
+{
+
+main
+{
+display: flex;
+flex-direction: column;
+align-items: center;    
+}
+section 
+{
+min-width: 80vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+section img 
+{
+max-width: 90vh;
+}
+aside 
+{
+width: 80vh;
+border-radius: 10px;    
+}
+nav 
+{
+max-width: 80vh;
+}
+nav a 
+{
+font-size: 1.3em;    
+}
+h1,h2,h3
+{
+font-size: 1.3em;    
+padding: 1em 9em;
+}
+p
+{
+font-size: 1em;    
+}    
+}
+
+@media screen and (max-width:560px) 
+{
+body
+{
+width:80%;    
+}
+nav 
+{
+flex-direction: column;
+align-items: center;
+min-width: 100vh;    
+}
+nav a 
+{
+padding: 0.5em 7em;
+font-size: 1.5em;
+}
+section img 
+{
+min-width: 50vh;    
+}
+section 
+{
+min-width:50vh;    
+}
+h1,h2,h3
+{
+font-size: 1em;
+padding: 1em 7em;    
+}
+p
+{
+font-size: 1em;    
+}
+aside 
+{
+display:none;
+}
+}

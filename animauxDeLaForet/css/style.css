@@ -1,0 +1,68 @@
+body {
+  background-image:url("../images/bg.jpg");
+
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: green;
+  text-align: center;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+ .galerie img {
+max-width: 300px;
+min-width: 130px;
+margin : 3px;
+padding: 10px;
+height: 300px;
+background-color: white;
+border: 1px solid black;
+flex: 1 1 auto;
+object-fit: cover;
+transition: 0.3s ease 0.3s;
+
+
+}
+
+body:hover img{
+  filter: blur(3px) brightness(0.8) sepia(1);
+  transform: scale(0.8);
+
+  }
+body:hover a {
+  transform: scale(0.8);
+  background-color: rgba(0, 128, 0, 0.432);
+} 
+
+  .galerie img:hover {
+    transform: scale(1);
+   filter: sepia(0);
+    cursor: pointer;
+  }
+
+  body a {
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: green;
+    position: absolute;
+  }
+
+  body a:hover {
+    transform: scale(1);
+    background-color: rgba(0, 128, 0, 0.555); 
+  }
+  
+
+
+
+
+
