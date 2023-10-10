@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courgette';
+    padding: 0;
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    background-color: rgb(245, 212, 246);
+    flex-direction: column;
+
+
+
+}
+
+header>div:not(:first-child) {
+    padding: 1em 15em;
+}
+
+header .topbar {
+    flex-basis: 100%;
+    background-color: black;
+    min-height: 3em;
+    padding: 1em 1em;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+header #cart i {
+    color: rgb(214, 145, 216);
+    font-size: 25px;
+}
+
+#cart {
+    max-width: 150px;
+    float: right;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+nav {
+    min-height: 10vh;
+    background-color: rgb(245, 212, 246);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background-color: rgb(214, 145, 216);
+}
+
+
+main {
+    background-color: rgb(214, 208, 208);
+    padding: 1em 15em;
+}
+
+main>section {
+    margin-bottom: 3em;
+}
+
+#slider h2 {
+    background-color: #f6d4f5b7;
+    font-size: 1em;
+    transform: translate(1%, 120%);
+    max-width: 50%;
+}
+
+#slider span {
+    font-size: 0.6em;
+    font-weight: 500;
+}
+
+#slider img {
+    min-height: 35vh;
+    max-width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#select {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    align-items: baseline;
+    justify-content: center;
+    background-color: white;
+    padding: 1em 2em 3em 1em;
+}
+
+#select>article {
+    flex: 1 0 10%;
+    padding: 1em;
+
+}
+
+#select h1:first-child {
+    flex: 0 1 100%;
+}
+
+#news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 1em 2em 3em 1em;
+}
+
+#news>article {
+    flex: 1 0 30%;
+    padding: 1em;
+
+}
+
+#new>h2 {
+    padding: 0.5em;
+    background-color: rgb(240, 109, 131);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 12em;
+}
+
+#best>h2 {
+    padding: 0.5em;
+    background-color: rgb(115, 221, 88);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 12em;
+}
+
+#crush>h2 {
+    padding: 0.5em;
+    background-color: rgb(66, 90, 224);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    max-width: 12em;
+}
+
+/* footer {
+    display: flex;
+    flex-direction: column;
+
+} */
+
+#info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(244, 168, 247, 0.849);
+    padding: 2em;
+
+}
+
+#info>article {
+    flex: 1 0 20%;
+}
+
+#bottombar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(245, 212, 246);
+    padding: 10px 50px;
+}
+
+#bottombar>article {
+    flex: 1 0 30%;
+}
+
+article>ul>li {
+    list-style: none;
+}
+
+
+
+
+@media screen and (max-width:640px) {
+    header>div:not(:first-child) {
+        padding: 1em 5em;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        padding: 1em 5em;
+    }
+
+    #info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #info > article {
+        padding: 2em;
+        flex: 1 0 100%;
+    }
+    #info > article:hover {
+        background-color: rgb(214, 145, 216);
+        cursor: pointer;
+    }
+
+    #bottombar {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    #bottombar > article {
+        padding: 2em;
+    }
+
+    
+}
+
+@media screen and (min-width:640px) and (max-width:840px) {
+    header>div:not(:first-child) {
+        padding: 1em 8em;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        padding: 1em 8em;
+    }
+}
