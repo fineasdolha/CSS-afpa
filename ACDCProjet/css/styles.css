@@ -1,0 +1,56 @@
+@font-face {
+    font-family: HARD_ROCK;
+    src: url(../fonts/HARD_ROCK.ttf);
+}
+
+@font-face {
+    font-family: rocknroll_typo_crazy;
+    src: url(../fonts/rocknroll_typo_crazy.ttf);
+}
+
+@font-face {
+    font-family: TheDark;
+    src: url(../fonts/TheDark.ttf);
+}
+
+.body {
+    font-family: 'Times New Roman';  
+}
+
+.navbar {
+    max-width: 65%;
+    max-height: 8vh;
+
+}
+.figure>img {
+    width: 20rem;
+    height: 20rem;
+
+}
+.my-card {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.buttons {
+    font-family: 'Times New Roman';
+}
+
+
+.form-control::placeholder {
+    color: #c40303;
+    opacity: 1;
+}
+@media screen and (max-width:576px) {
+    .buttons {
+        font-family:'rocknroll_typo_crazy';
+    }
+    .myTitle {
+        font-family: 'TheDark';
+    }
+    .form-control::placeholder {
+        font-family: 'TheDark';
+}
+}
