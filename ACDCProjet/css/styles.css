@@ -23,8 +23,8 @@
 
 }
 .figure>img {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
 
 }
 .my-card {
@@ -42,6 +42,10 @@
 .form-control::placeholder {
     color: #c40303;
     opacity: 1;
+}
+
+.my-form {
+    max-width: 576px;
 }
 @media screen and (max-width:576px) {
     .buttons {
